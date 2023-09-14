@@ -9,7 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Local Pickup Only for WooCommerce
- * Plugin URI:        https://www.denisahac.xyz/ 
+ * Plugin URI:        https://github.com/denisahac/local-pickup-only-for-woocommerce/
  * Description:       Allow local pickup only for certain WooCommerce products.
  * Version:           1.0.0
  * Requires at least: 5.2
@@ -19,7 +19,7 @@
  * Text Domain:       local-pickup-only 
  * License:           GPL v2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Update URI:        https://www.denisahac.xyz/ 
+ * Update URI:        https://github.com/denisahac/local-pickup-only-for-woocommerce/
  */
 
 function local_pickup_only_shipping_method( $methods, $raw_methods, $allowed_classes, $context ) {
