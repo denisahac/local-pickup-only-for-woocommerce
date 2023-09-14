@@ -1,6 +1,6 @@
 <?php
 /**
- * WooCommerce Local Pickup Only
+ * Local Pickup Only for WooCommerce 
  *
  * @package           Local Pickup Only 
  * @author            Den Isahac
@@ -8,7 +8,7 @@
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Woocommerce Local Pickup Only 
+ * Plugin Name:       Local Pickup Only for WooCommerce
  * Plugin URI:        https://www.denisahac.xyz/ 
  * Description:       Allow local pickup only for certain WooCommerce products.
  * Version:           1.0.0
@@ -22,7 +22,7 @@
  * Update URI:        https://www.denisahac.xyz/ 
  */
 
-function wc_local_pickup_only_shipping_method( $methods, $raw_methods, $allowed_classes, $context ) {
+function local_pickup_only_shipping_method( $methods, $raw_methods, $allowed_classes, $context ) {
         if( ! is_admin() ) {
                 $cart_items = WC()->cart->get_cart();
                 $cart_items_eligible_for_local_pickup = false;
@@ -55,4 +55,4 @@ function wc_local_pickup_only_shipping_method( $methods, $raw_methods, $allowed_
 
         return $methods;
 }
-add_filter( 'woocommerce_shipping_zone_shipping_methods', 'wc_local_pickup_only_shipping_method', 10, 4 );
+add_filter( 'woocommerce_shipping_zone_shipping_methods', 'local_pickup_only_shipping_method', 10, 4 );
