@@ -4,22 +4,23 @@ Allow local pickup only for certain WooCommerce products.
 
 ## Setup
 
-### Add Shipping Zone
+### 1. Add Shipping Zone
 
 First, setup the shipping zone in **WooCommerce** > **Settings** > **Shipping** > **Shipping zones** > **Add shipping zone**.
 
 ![Add shipping zone](assets/images/guides/add-shipping-zone.jpg)
 
 **Zone name:** Flat rate
+
 **Zone regions:** United States (US)
 
-#### Add Default Shipping Methods
+#### 1.1 Add Default Shipping Methods
 
 Then, add the other shipping methods; i.e. Flat rate.
 
 ![Flat rate shipping zone](assets/images/guides/shipping-zone-flat-rate.jpg)
 
-#### Add "Local pickup" Shipping Method
+#### 1.2 Add "Local pickup" Shipping Method
 
 After adding the default shipping methods, it's now time to setup the "Local pickup". Still on the Shipping Zone edit screen, click the "Add shipping method" and this time, select the "Local pickup".
 
@@ -27,17 +28,18 @@ After adding the default shipping methods, it's now time to setup the "Local pic
 
 Here's how your shipping zone should look like after the above.
 
-![Shipping zone](assets/images/guides/shippingz-zone.jg)
+![Shipping zone](assets/images/guides/shipping-zone.jg)
 
-### Add Shipping Class
+### 2. Add Shipping Class
 
 On this section, we're going to configure the "Local Pickup" shipping class that is responsible for showing the local pickup option for certain products.
 
-### Add "Local Pickup" Shipping Class
+### 2.1 Add "Local Pickup" Shipping Class
 
 Navigate to **WooCommerce** > **Settings** > **Shipping** > **Shipping classes** > **Add shipping class**
 
 **Shipping class name:** Local Pickup
+
 **Slug:** local-pickup
 
 ![Local Pickup shipping class](assets/images/guides/shipping-class-local-pickup.jpg)
@@ -46,32 +48,32 @@ Don't forget to click the "Save shipping classes" button.
 
 *Note:* The "local-pickup" slug is very important here as this is the exact string the code is using to filter the appropriate shipping methods. 
 
-### Edit Product
+## 3. Edit Product
 
 Next, we now assign which products gets the "Local pickup" only shipping method by editing the product's shipping class.
 
-### Assign The "Local Pickup" Shipping Class
+### 3.1 Assign The "Local Pickup" Shipping Class
 
 On the product's edit screen navigate to **Shipping** tab > **Fees & dimensions** > **SHIPPING CLASS** and select "Local Pickup" then save the product.
 
-![Edit product's shipping class](assets/images/guides/shipping-class-local-pickup.jpg)
+![Edit product's shipping class](assets/images/guides/edit-product.jpg)
 
-## Testing
+## 4. Testing
 
-### "Local Pickup" Only Products with Other Products
+### 4.1 "Local Pickup" Only Products with Other Products
 
-When products with "Local Pickup" shipping class are added together with other non local-pickup products, then only "Local pickup" would show up as shipping method.
+When products with "Local Pickup" shipping class are added together with other non local-pickup products, then only the "Local pickup" would show up as shipping method.
 
 ![Local pickup only products combined with other products](assets/images/guides/cart-with-other-items-local-pickup-only.jpg)
 
 
-### "Local Pickup" Only Products
+### 4.2 "Local Pickup" Only Products
 
-When only products with "Local Pickup" shipping classes are on the cart, then only the "Local Pickup" would show up as the shipping method.
+When products with "Local Pickup" shipping class are only in the cart, then only the "Local Pickup" would show up as the shipping method.
 
 ![Local pickup only products](assets/images/guides/cart-local-pickup-only.jpg)
 
-### Other Products
+### 4.3 Other Products
 
 When no "Local Pickup" products are on the cart, then the other shipping methods would show up.
 
@@ -100,13 +102,14 @@ Shipping Zone Methods:
 What would show up on the cart/checkout is:
 
 - Flat rate
+
 ![Other products](assets/images/guides/other-products.jpg)
 
-## Issues
+## 5. Issues
 
 - Feel free to open an issue on [Github](https://github.com/denisahac/local-pickup-only-for-woocommerce)
 - If you're having trouble setting up the plugin, shot me an email and would be happy to help.
 
-# Github
+# 6. Github
 
 [https://github.com/denisahac/local-pickup-only-for-woocommerce](https://github.com/denisahac/local-pickup-only-for-woocommerce)
