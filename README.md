@@ -28,7 +28,7 @@ After adding the default shipping methods, it's now time to setup the "Local pic
 
 Here's how your shipping zone should look like after the above.
 
-![Shipping zone](assets/images/guides/shipping-zone.jg)
+![Shipping zone](assets/images/guides/shipping-zone.jpg)
 
 ### 2. Add Shipping Class
 
