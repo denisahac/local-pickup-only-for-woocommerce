@@ -110,6 +110,6 @@ What would show up on the cart/checkout is:
 - Feel free to open an issue on [Github](https://github.com/denisahac/local-pickup-only-for-woocommerce)
 - If you're having trouble setting up the plugin, shot me an email and would be happy to help.
 
-# 6. Github
+## 6. Github
 
 [https://github.com/denisahac/local-pickup-only-for-woocommerce](https://github.com/denisahac/local-pickup-only-for-woocommerce)
