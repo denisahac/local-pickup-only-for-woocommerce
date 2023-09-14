@@ -1,6 +1,20 @@
-# Local Pickup Only for WooCommerce
+=== Local Pickup Only for WooCommerce ===
+Contributors: denisahac 
+Tags: local-pickup-only, local-pickup-only-for-woocommerce, woocommerce-local-pickup, local-pick-only, local-pickup
+Requires at least: 4.7
+Tested up to: 5.4
+Stable tag: 1.0.0
+Requires PHP: 7.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Allow local pickup only for certain WooCommerce products.
+
+== Description ==
+
+Allow local pickup only for certain WooCommerce products.
+
+== Installation ==
 
 ## Setup
 
@@ -58,6 +72,8 @@ On the product's edit screen navigate to **Shipping** tab > **Fees & dimensions*
 
 ![Edit product's shipping class](assets/images/guides/edit-product.jpg)
 
+=== Testing ===
+
 ## 4. Testing
 
 ### 4.1 "Local Pickup" Only Products with Other Products
@@ -65,7 +81,6 @@ On the product's edit screen navigate to **Shipping** tab > **Fees & dimensions*
 When products with "Local Pickup" shipping class are added together with other non local-pickup products, then only the "Local pickup" would show up as shipping method.
 
 ![Local pickup only products combined with other products](assets/images/guides/cart-with-other-items-local-pickup-only.jpg)
-
 
 ### 4.2 "Local Pickup" Only Products
 
@@ -105,17 +120,14 @@ What would show up on the cart/checkout is:
 
 ![Other products](assets/images/guides/other-products.jpg)
 
-## 5. Issues
-
-- Feel free to open an issue on [Github](https://github.com/denisahac/local-pickup-only-for-woocommerce)
-- If you're having trouble setting up the plugin, shot me an email and would be happy to help.
-
-## 6. Github
-
-[https://github.com/denisahac/local-pickup-only-for-woocommerce](https://github.com/denisahac/local-pickup-only-for-woocommerce)
-
-## 7. License
+== License ==
 
 **License:** GPL v2 or later
 
 **License URI:** [http://www.gnu.org/licenses/gpl-2.0.txt](http://www.gnu.org/licenses/gpl-2.0.txt)
+
+== Changelog ==
+
+= 1.0.0 =
+* First stable version.
+
